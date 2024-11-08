@@ -1,0 +1,19 @@
+/* style.css */
+.main-sidebar { 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-right: 1px solid rgba(0, 0, 0, 0.1); 
+}
+.sidebar-menu > li > a {
+  color: #333333; 
+}
+.sidebar-menu > li > a:hover, .sidebar-menu > li.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+.content-wrapper { 
+  background-color: #f9f9f9; 
+}
+.box {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
