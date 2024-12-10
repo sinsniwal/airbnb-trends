@@ -1,19 +1,57 @@
 /* style.css */
-.main-sidebar { 
-  background-color: rgba(255, 255, 255, 0.8); 
-  border-right: 1px solid rgba(0, 0, 0, 0.1); 
+
+/* General Layout */
+body, .content-wrapper {
+    background-color: #f5f7fa; /* Light background to keep a clean look */
+    font-family: 'Inter', sans-serif;
 }
+
+/* Transparent, Collapsible Sidebar */
+.main-sidebar {
+    background-color: rgba(255, 255, 255, 0.85); /* Transparent white */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease; /* Smooth collapse transition */
+}
+
+.main-sidebar.collapsed {
+    width: 60px; /* Collapse to icons only */
+}
+
 .sidebar-menu > li > a {
-  color: #333333; 
+    color: #333333;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: color 0.3s ease;
 }
+
 .sidebar-menu > li > a:hover, .sidebar-menu > li.active > a {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000000;
+    background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+    color: #000000;
 }
-.content-wrapper { 
-  background-color: #f9f9f9; 
+
+/* Sidebar Contact Section Styling */
+.sidebar-contact {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333333;
 }
-.box {
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.sidebar-contact a {
+    color: #333333;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-contact a:hover {
+    color: #007bff; /* Accent color for hover */
+}
+
+/* Font and Heading Styling */
+h2, h4 {
+    color: #333333;
+}
+p {
+    color: #555555;
 }
